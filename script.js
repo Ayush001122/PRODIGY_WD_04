@@ -1,4 +1,4 @@
-const apiKey = 'bd5e378503939ddaee76f12ad7a97608'; 
+const apiKey = 'api-key'; 
 
 function displayWeather(data) {
   const iconMap = {
