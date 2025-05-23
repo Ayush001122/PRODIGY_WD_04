@@ -1,0 +1,97 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #c8bbbb 0%, #7f929c 100%);
+  color: #333;
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.weather-box h2 {
+  margin-bottom: 4px;
+  font-size: 1.8rem;
+}
+
+#description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.weather-box p {
+  margin: 2px 0;
+  font-size: 1rem;
+}
+
+
+.weather-box { 
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 420px;
+  margin: 30px auto;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+input, button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  margin: 10px 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+input {
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+button {
+  background-color: #ffecd2;
+  background-image: linear-gradient(90deg, #ffecd2 0%, #fcb69f 100%);
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-image: linear-gradient(90deg, #fcb69f 0%, #ffecd2 100%);
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  margin: 20px auto;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.05) 80%);
+  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.2);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.2);
+  }
+}
